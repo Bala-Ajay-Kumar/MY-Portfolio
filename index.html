@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gonavaram Bala Ajaykumar | Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="themeToggle" class="toggle-btn">🌙</button>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Gonavaram Bala Ajaykumar</h1>
+      <p class="role">Frontend Developer | React.js | MERN Stack</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="card">
+    <h2>About Me</h2>
+    <p>
+      Frontend Developer with 1+ year of experience building performant, responsive web applications using React.js and the MERN stack.
+      Skilled in creating data-driven dashboards, component libraries, and seamless user experiences.
+      Comfortable owning the full stack while keeping frontend quality front and center.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>React.js</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="card">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Bistro Elegance – Restaurant Web Application</h3>
+      <ul>
+        <li>Responsive and SEO-friendly restaurant web app with modern UI.</li>
+        <li>Interactive menu system with filtering and dynamic components.</li>
+        <li>Reservation system with validation and API simulation.</li>
+        <li>Lazy loading & image optimization reduced load time by ~35%.</li>
+        <li>Cross-browser & mobile responsive using Flexbox and Grid.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Bus Traveller – Travel & Tourism Platform</h3>
+      <ul>
+        <li>Dynamic travel interface with reusable responsive components.</li>
+        <li>Lead capture system with validation and backend simulation.</li>
+        <li>Structured UI modules using Flexbox.</li>
+        <li>Smooth navigation, animations, and optimized rendering.</li>
+        <li>Improved page speed by ~25% with asset optimization.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="card">
+    <h2>Education</h2>
+    <p>
+      B.Tech (ECE) | Rayalaseema University College of Engineering, Kurnool (2019–2023)
+    </p>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="card">
+    <h2>Certificates</h2>
+    <ul class="list">
+      <li>MERN Full Stack Development | Pentagon Workspace</li>
+      <li>Full Stack Web Development | NXT Wave</li>
+      <li>Introduction to Industry 4.0 and IIoT | NPTEL</li>
+    </ul>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="card">
+    <h2>Awards & Achievements</h2>
+    <ul class="list">
+      <li>Gold Medal – State Level Karate Championship (1st Grade)</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="card contact">
+    <h2>Contact</h2>
+    <p>Phone: 6305238280</p>
+  </section>
+
+  <!-- JS for Dark Mode -->
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent =
+        document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
+
+</body>
+</html>
